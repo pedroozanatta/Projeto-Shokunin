@@ -3,21 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Shokunin</title>
 </head>
 <body>
     <header>
-        <div><img src="logo-shokunin.png" alt="Logo Shokunin"></div>
+        <div><img class="logo-header" src="logo-shokunin.png" alt="Logo Shokunin"></div>
         <nav>
             <ul>
-                <li>Home</li>
-                <li>Menu</li>
-                <li>Sobre nós</li>
-                <li>Contato</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="#">Avaliação</a></li>
             </ul>
         </nav>
+        <div>
+            <a href="contato.html"><img class="btn-contato" src="btn-contato.png" alt="Botão Contato"></a>
+        </div>
     </header>
-    <main></main>
-    <footer></footer>
+
+    <main>
+        <section>
+            <div class="banner-container">
+                <h1 class="titulo-imagem">Descubra o Sabor da Tradição Japonesa</h1>
+            </div>
+        </section>
+        <section class="info-container">
+            <div class="texto-info">
+                <h1 class="h1-padrao">A Arte de Servir com Perfeição</h1>
+                <p class="p-padrao">No Japão, Shokunin significa mais do que “artesão” é alguém que busca a perfeição em tudo o que faz. Essa filosofia guia cada detalhe do nosso restaurante: desde a escolha dos ingredientes até a apresentação de cada prato.</p>      
+                <p class="p-padrao">Nosso compromisso é proporcionar uma experiência autêntica, equilibrando sabores tradicionais com um toque contemporâneo.</p>
+            </div>
+            <img class="imagem-gato" src="img-info.png" alt="Imagem Gato Japonês">
+        </section>
+        <section class="menu-container">
+            <div><img class="img-menu" src="img-menu.png" alt="Imagem Rámen"></div>
+            <div class="conteudo-menu">
+                <h1 class="h1-padrao">Destaque de Produtos (Vitrine)</h1>
+                <p class="p-padrao">No Shokunin, celebramos o melhor da culinária japonesa com uma seleção especial de pratos artesanais. Nossa vitrine reúne 10 produtos cuidadosamente escolhidos para representar a diversidade e a riqueza da gastronomia do Japão. Explore nossas principais categorias:</p>
+                <button id="btn_menu"><img src="menu-icon.png" alt="Icon Menu">Menu</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer-container">
+            <div>
+                <img src="logo-footer.png" alt="Logo Shokunin">
+            </div>
+            <div class="footer-itens">
+                <h2>Navegação</h2>
+                <a href="index.html">Home</a>
+                <a href="#">Menu</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="#">Avaliação</a>
+            </div>
+            <div class="footer-itens">
+                <h2>Contato</h2>
+                <p>Rua Teste do Oriente, 123 - São Paulo/SP</p>
+                <p>Segunda a Sábado -  12h às 22h</p>
+                <p>(11) 99999-0000</p>
+                <div class="icons">
+                    <img src="insta-icon.png" alt="Instagram Icon">
+                    <img src="whats-icon.png" alt="Whatsapp Icon">
+                    <img src="face-icon.png" alt="Facebook Icon">
+                </div>
+            </div>
+            <div class="footer-itens">
+                <h2>Termos</h2>
+                <p>Política de Privacidade</p>
+                <p>Todos os direitos reservados</p>
+            </div>
+        </section>
+        <section class="footer-end">
+            <p>© 2025 Shokunin - Todos os direitos reservados. Desenvolvido por <a href="#">Pedro Zanatta</a></p>
+        </section>
+    </footer>
 </body>
 </html>

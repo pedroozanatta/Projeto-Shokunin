@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+body{
+    background-image: url(fundo-contato.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+.h1-padrao{
+    margin-top: 60px;
+    text-align: center;
+    width: 100%;
+}
+
+.formulario{
+    width: 80dvw;
+    padding: 50px;
+    margin-top: 10px;
+    background-color: var(--cor1);
+    border-radius: 30px;
+}
+
+form{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+}
+
+input, textarea{
+    border: 3px solid #c0c0c0;
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    margin-top: 4px;
+}
+
+textarea{
+    height: 100px;
+}
+
+label{
+    font-family: var(--fonteP);
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1.1px;
+    color: var(--cor3);
+}
+
+:placeholder-shown{
+    font-family: var(--fonteP);
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 5px;
+    opacity: 80%;
+}
+
+input[type="submit"]{
+    width: 200px;
+    height: 80px;
+    background-image: linear-gradient(to bottom, var(--cor5), var(--cor6));
+    border-radius: 15px;
+    color: var(--cor1);
+    border: none;
+    font-family: var(--fonteBtn);
+    font-weight: 500;
+    font-size: 28px;
+}
+
+input[type="submit"]:hover{
+    background-image: linear-gradient(to bottom, var(--cor6), var(--cor7));
+    cursor: pointer;
+    width: 202px;
+    transition: 0.1s;
+}
+
+input:focus , textarea:focus{
+    border: 3px solid var(--cor7);
+    outline: none;
+    transition: 0.1s;
+}
