@@ -184,11 +184,6 @@ main{
     transition: 0.1s;
 }
 
-#btn_menu img{
-    width: 36px;
-    height: 36px;
-}
-
 .img-menu{
     margin-left: 20px;
     width: 80%;
@@ -213,7 +208,7 @@ footer{
 
 .footer-itens{
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
     gap: 20px;
 }
 
@@ -249,6 +244,8 @@ footer{
 
 .icons{
     display: flex;
-    width: 100px;
-    gap: 12px;
+    gap: 20px;
+    font-size: 24px;
+    color: var(--cor1);
 }
+

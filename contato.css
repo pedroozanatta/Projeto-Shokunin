@@ -78,3 +78,17 @@ input:focus , textarea:focus{
     outline: none;
     transition: 0.1s;
 }
+
+.btn-enviar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icons-contato{
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 24px;
+    color: var(--cor6);
+    gap: 12px;
+}

@@ -4,52 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" href="avaliacao.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Contato</title>
+    <title>Avaliação</title>
 </head>
 <body>
     <header>
         <div><img class="logo-header" src="logo-shokunin.png" alt="Logo Shokunin"></div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="">Menu</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="">Avaliação</a></li>
+                <li><a href="#">Avaliação</a></li>
             </ul>
         </nav>
         <div>
             <a href="contato.html"><img class="btn-contato" src="btn-contato.png" alt="Botão Contato"></a>
         </div>
     </header>
+
     <main>
-        <h1 class="h1-padrao">
-            Entre em Contato
-        </h1>
-        <section class="formulario">
-            <form method="get">
-                <div>
-                    <label for="inome">Nome:</label>
-                    <input id="inome" name="nome" type="text" required placeholder="Digite o seu Nome">
+        <section>
+            <div>
+                <img src="foto-avaliação.png" alt="Foto Avaliação">
+            </div>
+            <div class="avaliacao-container">
+                <h1 class="h1-padrao">Avaliações do nosso produto</h1>
+                <div class="avaliacao-box">
+                    <h2>Nome Cliente</h2>
+                    <div class="estrelas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>Comentario do Cliente</p>
                 </div>
-                <div>
-                    <label for="iemail">Email:</label>
-                    <input type="email" id="iemail" name="email" placeholder="Digite o seu Email">
+                <div class="avaliacao-box">
+                    <h2>Nome Cliente</h2>
+                    <div class="estrelas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>Comentario do Cliente</p>
                 </div>
-                <div>
-                    <label for="imsg">Mensagem:</label>
-                    <textarea name="msg" id="imsg"></textarea>
+                <div class="avaliacao-box">
+                    <h2>Nome Cliente</h2>
+                    <div class="estrelas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>Comentario do Cliente</p>
                 </div>
-                <div class="btn-enviar">
-                    <input type="submit" value="Enviar">
-                    <div class="icons-contato">
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <i class="fa-brands fa-facebook"></i>
-                </div>
-                </div>
-            </form>
+            </div>
         </section>
     </main>
 
@@ -86,6 +101,5 @@
             <p>© 2025 Shokunin - Todos os direitos reservados. Desenvolvido por <a href="#">Pedro Zanatta</a></p>
         </section>
     </footer>
-
 </body>
 </html>
