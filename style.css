@@ -71,7 +71,6 @@ header{
 
 ul{
     display: flex;
-    justify-content: space-between;
 }
 
 li{
@@ -90,6 +89,7 @@ li a{
 .btn-contato{
     width: 60px;
 }
+
 
 .btn-contato:hover{
     content: url(btn-contato-hover.png);
@@ -158,6 +158,10 @@ main{
     justify-content: center;
     gap: 50px;
     margin-right: 5%;
+}
+
+.conteudo-menu a{
+    text-decoration: none;
 }
 
 #btn_menu{
