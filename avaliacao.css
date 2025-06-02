@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 body{
     background-color: var(--cor1);
 }
@@ -32,10 +33,10 @@ section img{
 }
 
 .avaliacao h1{
+    font-family: var(--fonteH);
     text-align: center;
-    font-size: 38px;
+    font-size: 44px;
     font-weight: 500;
-    line-height: 48px;
 }
 
 .avaliacao-box{

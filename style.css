@@ -33,15 +33,15 @@
 body{
     background-color: var(--cor1);
     display: flex;
-    flex-flow: column nowrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 
 .h1-padrao{
-    font-weight: 900;
-    font-size: 50px;
+    font-weight: 500;
+    font-size: 44px;
     letter-spacing: 1.25%;
     width: 70%;
 }
@@ -50,7 +50,6 @@ body{
     font-family: var(--fonteP);
     font-size: 20px;
     line-height: 40px;
-    width: 100%;
     text-align: justify;
 }
 
@@ -59,10 +58,10 @@ header{
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 0px 60px;
+    padding: 0 4%;
     background-color: var(--cor1);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.10);
-    z-index: 1000;
+    z-index: 100;
 }
 
 .logo-header{
@@ -73,25 +72,51 @@ ul{
     display: flex;
 }
 
-li{
+li {
     margin-right: 80px;
     list-style: none;
+    padding: 10px 0px;
 }
 
-li a{
+li a {
     text-decoration: none;
     font-family: var(--fonteH);
-    color: #101010;
+    color: var(--cor3);
     font-weight: medium;
     font-size: 20px;
+    position: relative;
+    transition: color 0.3s ease;
 }
 
-.btn-contato{
+li a::before {
+    content: '';                    
+    position: absolute;             
+    bottom: -5px;                  
+    left: 0;                   
+    width: 0;                       
+    height: 3px;                   
+    background: var(--cor6);
+    transition: width 0.3s ease;    
+    border-radius: 50px;             
+}
+
+li a:hover::before {
+    width: 100%; 
+}
+
+li a:hover {
+    color: var(--cor6);
+}
+
+
+.btn-contato img{
     width: 60px;
+    transition: all ease 0.2s;
 }
 
 
-.btn-contato:hover{
+.btn-contato img:hover{
+    transform: scale(1.02);
     content: url(btn-contato-hover.png);
 }
 
@@ -111,9 +136,9 @@ main{
 }
 
 .titulo-imagem{
-    font-weight: 900;
-    font-size: 40px;
-    letter-spacing: 1.2%;
+    font-weight: 500;
+    font-size: 44px;
+    letter-spacing: 1.25%;
     width: 30%;
     color: var(--cor1);
     position: absolute;
@@ -166,26 +191,23 @@ main{
 
 #btn_menu{
     display: flex;
-    align-self: center;
     gap: 12px;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 80px;
+    padding: 5% 14%;
     background-image: linear-gradient(to bottom, var(--cor5), var(--cor6));
     border-radius: 15px;
     color: var(--cor1);
     border: none;
     font-family: var(--fonteBtn);
     font-weight: 500;
-    font-size: 28px;
+    font-size: 26px;
+    margin: 1%;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 #btn_menu:hover{
     background-image: linear-gradient(to bottom, var(--cor6), var(--cor7));
-    cursor: pointer;
-    width: 202px;
-    transition: 0.1s;
+    transform: translateY(-4px) scale(1.02);
 }
 
 .img-menu{
@@ -252,4 +274,3 @@ footer{
     font-size: 24px;
     color: var(--cor1);
 }
-
