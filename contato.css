@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body{
-    background-image: url(fundo-contato.png);
+    background-image: url(img/fundo-contato.png);
     background-position: center center;
     background-size: contain;
 }
@@ -31,7 +31,7 @@ main{
 .trabalho{
     height: 100svh;
     width: 65%;
-    background-image: url(elipse.png);
+    background-image: url(img/elipse.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -54,9 +54,9 @@ button{
     display: flex;
     align-items: center;
     gap: 12px;
-    padding: 4% 8%;
+    padding: 3% 6%;
     font-family: var(--fonteBtn);
-    font-size: 20px;
+    font-size: 28px;
     border: none;
     border-radius: 10px;
     background-color: var(--cor7);
@@ -115,5 +115,10 @@ button{
         border-radius: 5px;
     }
 }
+
+@media (max-width: 450px){
+    
+}
+
 
 

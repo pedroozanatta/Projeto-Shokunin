@@ -114,7 +114,9 @@ iframe {
     }
 
     .contato img{
-        width: auto;
+        display: flex;
+        align-self: center;
+        width: 85%;
         height: 520px;
     }
 
@@ -144,5 +146,6 @@ iframe {
     .contato p {
         font-size: 14px;
     }
+
 }
 

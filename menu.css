@@ -96,24 +96,6 @@ h1 {
         display: none;
     }
 
-    .footer-itens h2{
-        font-size: 24px;
-        font-weight: 500;
-    }
-
-    .footer-itens p, .footer-itens a{
-        font-size: 14px;
-        font-weight: 400;
-    }
-
-    .footer-end p, .footer-end a{
-        font-size: 12px;
-    }
-
-    .icons{
-        gap: 32px;
-        font-size: 28px;
-    }
 }
 
 @media(max-width: 450px){
@@ -134,5 +116,5 @@ h1 {
 
     .p-cards {
         font-size: 14px;
-    }    
+    }   
 }

@@ -7,18 +7,19 @@ body{
 
 section{
     display: flex;
+    margin-top: 80px;
     gap: 40px;
 }
 
 section img{
-    width: 100%;
+    width: 90%;
 }
 
 .img-avaliacao{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60%;
+    width: 70%;
 }
 
 .img-perfil{
@@ -26,13 +27,12 @@ section img{
 }
 
 .avaliacao{
-    margin-top: 80px;
     width: 80%;
     display: flex;
-    align-self: flex-start;
+    align-self: start;
+    justify-content: center;    
     flex-direction: column;
-    justify-content: center;
-    gap: 30px;
+    gap: 32px;
 }
 
 .avaliacao h1{
