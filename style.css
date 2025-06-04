@@ -26,10 +26,6 @@
     --cor8: #2E0404;
 }
 
-.border{
-    border: 3px solid black;
-}
-
 body{
     background-color: var(--cor1);
     display: flex;
@@ -37,7 +33,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-
 
 .h1-padrao{
     font-weight: 500;
