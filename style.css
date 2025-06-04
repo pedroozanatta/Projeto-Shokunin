@@ -112,7 +112,7 @@ li a:hover {
 
 .btn-contato img:hover{
     transform: scale(1.02);
-    content: url(img/btn-contato-hover.png);
+    content: url(btn-contato-hover.png);
 }
 
 main{
@@ -127,7 +127,7 @@ main{
 }
 
 .banner-container{
-    background-image: url(img/main-image.png);
+    background-image: url(main-image.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;

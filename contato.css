@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body{
-    background-image: url(img/fundo-contato.png);
+    background-image: url(fundo-contato.png);
     background-position: center center;
     background-size: contain;
 }
@@ -31,7 +31,7 @@ main{
 .trabalho{
     height: 100dvh;
     width: 65%;
-    background-image: url(img/elipse.png);
+    background-image: url(elipse.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
