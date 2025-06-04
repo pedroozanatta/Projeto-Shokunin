@@ -29,7 +29,7 @@ main{
 }
 
 .trabalho{
-    height: 100svh;
+    height: 100dvh;
     width: 65%;
     background-image: url(img/elipse.png);
     background-position: center;
@@ -81,7 +81,7 @@ button{
     }
 
     .trabalho{
-        width: 100svw;
+        width: 100dvw;
     }
 
     .conteudo-contato{
@@ -117,7 +117,15 @@ button{
 }
 
 @media (max-width: 450px){
-    
+
+    body{
+        background-image: none;
+        background-color: var(--cor6);
+    }
+
+    .trabalho{
+        background-image: none;
+    }
 }
 
 

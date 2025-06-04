@@ -111,4 +111,44 @@ section img{
     }
 }
 
+@media (max-width: 450px){
+
+    .avaliacao{
+        width: 95vw;
+        margin-top: 0;
+    }
+
+    .avaliacao h1{
+        font-size: 24px
+    }
+
+    .avaliacao-box{
+        width: 100%;
+    }
+
+    .titulo-avaliacao{
+        gap: 12px;
+        margin-bottom: 4px;
+    }
+
+    .titulo-avaliacao h2{
+        white-space: nowrap;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .footer-container{
+        padding: 0;
+    }
+
+    .titulo-avaliacao p{
+        font-size: 10px;
+    }
+
+    .estrelas{
+        font-size: 14px;
+    }
+}
+
+
 

@@ -443,6 +443,10 @@ footer{
         width: 75%;
     }
 
+    .footer-container{
+        padding: 20px 0px;
+    }
+
     .footer-itens{
         width: 40%;
     }
