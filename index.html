@@ -13,10 +13,10 @@
         <div><img class="logo-header" src="logo-shokunin.png" alt="Logo Shokunin"></div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="avaliacao.html">Avaliação</a></li>
+                <li><a href="index.html" target="_self">Home</a></li>
+                <li><a href="menu.html" target="_self">Menu</a></li>
+                <li><a href="sobre.html" target="_self">Sobre</a></li>
+                <li><a href="avaliacao.html" target="_self">Avaliação</a></li>
             </ul>
         </nav>
         <div class="btn-contato ">
@@ -25,6 +25,14 @@
     </header>
 
     <main>
+        <section class="principal-mobile">
+            <h1 class="h1-mobile">Descubra o Sabor da Tradição Japonesa</h1>
+            <p class="p-mobile">No Japão, Shokunin significa mais do que “artesão” é alguém que busca a perfeição em tudo o que faz. Essa filosofia guia cada detalhe do nosso restaurante: desde a escolha dos ingredientes até a apresentação de cada prato</p>
+            <p class="p-mobile">Nosso compromisso é proporcionar uma experiência autêntica, equilibrando sabores tradicionais com um toque contemporâneo</p>
+            <a href="menu.html">
+                <button class="btn_menu"><i class="fa-solid fa-book-open"></i>Menu</button>
+            </a>
+        </section>
         <section>
             <div class="banner-container">
                 <h1 class="titulo-imagem">Descubra o Sabor da Tradição Japonesa</h1>
@@ -38,21 +46,25 @@
             </div>
             <img class="imagem-gato" src="img-info.png" alt="Imagem Gato Japonês">
         </section>
+            <aside>
+                <h1 class="h1-mobile">Destaque de Produtos (Vitrine)</h1>
+                <p class="p-mobile">No Shokunin, celebramos o melhor da culinária japonesa com uma seleção especial de pratos artesanais. Nossa vitrine reúne 10 produtos cuidadosamente escolhidos para representar a diversidade e a riqueza da gastronomia do Japão. Explore nossas principais categorias:</p>
+            </aside>
         <section class="menu-container">
-            <div><img class="img-menu" src="img-menu.png" alt="Imagem Rámen"></div>
+            <img class="img-menu" src="img-menu.png" alt="Imagem Rámen">
             <div class="conteudo-menu">
                 <h1 class="h1-padrao">Destaque de Produtos (Vitrine)</h1>
                 <p class="p-padrao">No Shokunin, celebramos o melhor da culinária japonesa com uma seleção especial de pratos artesanais. Nossa vitrine reúne 10 produtos cuidadosamente escolhidos para representar a diversidade e a riqueza da gastronomia do Japão. Explore nossas principais categorias:</p>
                 <a href="menu.html">
-                    <button id="btn_menu"><i class="fa-solid fa-book-open"></i>Menu</button>
-                </a>
+                    <button class="btn_menu"><i class="fa-solid fa-book-open"></i>Menu</button>
+                </a>             
             </div>
         </section>
     </main>
 
     <footer>
         <section class="footer-container">
-            <div>
+            <div id="logo_footer">
                 <img src="logo-footer.png" alt="Logo Shokunin">
             </div>
             <div class="footer-itens">
@@ -73,7 +85,7 @@
                     <i class="fa-brands fa-facebook"></i>
                 </div>
             </div>
-            <div class="footer-itens">
+            <div id="termos_footer" class="footer-itens">
                 <h2>Termos</h2>
                 <p>Política de Privacidade</p>
                 <p>Todos os direitos reservados</p>

@@ -8,7 +8,6 @@ body{
 section{
     display: flex;
     gap: 40px;
-    margin-top: 100px;
 }
 
 section img{
@@ -19,6 +18,7 @@ section img{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 60%;
 }
 
 .img-perfil{
@@ -26,25 +26,28 @@ section img{
 }
 
 .avaliacao{
+    margin-top: 80px;
     width: 80%;
     display: flex;
+    align-self: flex-start;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 30px;
 }
 
 .avaliacao h1{
     font-family: var(--fonteH);
-    text-align: center;
     font-size: 44px;
     font-weight: 500;
 }
 
 .avaliacao-box{
+    width: 90%;
     display: flex;
     background-color: var(--cor2);
     color: var(--cor3);
-    padding: 20px;
-    gap: 16px;
+    padding: 24px;
+    gap: 20px;
     border-radius: 10px;
     font-family: var(--fonteP);
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
@@ -58,15 +61,54 @@ section img{
 }
 
 .titulo-avaliacao h2{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
 }
 
 .titulo-avaliacao p{
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .estrelas{
     color: rgb(223, 220, 8);
 }
+
+@media(max-width: 900px){
+
+    .img-avaliacao{
+        display: none;
+    }
+
+    .avaliacao{
+        width: 90vw;
+        margin-top: 40px;
+    }
+
+    .avaliacao h1{
+        text-align: center;
+        font-family: var(--fonteP);
+        font-weight: 900;
+        font-size: 28px
+    }
+
+    .avaliacao-box{
+        width: 100%;
+    }
+
+    .titulo-avaliacao{
+        gap: 12px;
+        margin-bottom: 8px;
+    }
+
+    .titulo-avaliacao h2{
+        white-space: nowrap;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .titulo-avaliacao p{
+        font-size: 12px;
+    }
+}
+
 

@@ -16,8 +16,8 @@
     --fonteP: "Inter", sans-serif;
     --fonteBtn: "Chivo Mono", monospace;
 
-    --cor1: #FAFAFA;
-    --cor2: #F0F0F0;
+    --cor1: #f8f8f8;
+    --cor2: #ececec;
     --cor3: #101010;
     --cor4: #FDC9C9;
     --cor5: #DD625B;
@@ -41,14 +41,14 @@ body{
 
 .h1-padrao{
     font-weight: 500;
-    font-size: 44px;
+    font-size: 50px;
     letter-spacing: 1.25%;
     width: 70%;
 }
 
 .p-padrao{
     font-family: var(--fonteP);
-    font-size: 20px;
+    font-size: 22px;
     line-height: 40px;
     text-align: justify;
 }
@@ -124,6 +124,11 @@ main{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    justify-content: center;
+}
+
+.principal-mobile{
+    display: none;
 }
 
 .banner-container{
@@ -137,13 +142,13 @@ main{
 
 .titulo-imagem{
     font-weight: 500;
-    font-size: 44px;
+    font-size: 52px;
     letter-spacing: 1.25%;
-    width: 30%;
+    width: 32%;
     color: var(--cor1);
     position: absolute;
     bottom: 80px;
-    right: 40px;
+    right: 20px;
 }
 
 .info-container{
@@ -153,8 +158,9 @@ main{
     margin-top: 80px;
 }
 
-.imagem-gato{
-    width: 100%;
+.imagem-gato {
+    min-width: 400px;
+    width: 75%;
 }
 
 .texto-info{
@@ -162,7 +168,7 @@ main{
     flex-flow: column nowrap;
     gap: 50px;
     margin-left: 5%;
-    margin-right: 15%;
+    margin-right: 20%;
 }
 
 .menu-container{
@@ -178,18 +184,19 @@ main{
 .conteudo-menu{
     display: flex;
     align-self: center;
-    width: 50%;
     flex-direction: column;
     justify-content: center;
-    gap: 50px;
+    width: 40%;
+    gap: 40px;
     margin-right: 5%;
+    padding: 20px 0px;
 }
 
 .conteudo-menu a{
     text-decoration: none;
 }
 
-#btn_menu{
+.btn_menu{
     display: flex;
     gap: 12px;
     padding: 5% 14%;
@@ -199,20 +206,24 @@ main{
     border: none;
     font-family: var(--fonteBtn);
     font-weight: 500;
-    font-size: 26px;
+    font-size: 30px;
     margin: 1%;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-#btn_menu:hover{
+.btn_menu:hover{
     background-image: linear-gradient(to bottom, var(--cor6), var(--cor7));
     transform: translateY(-4px) scale(1.02);
 }
 
 .img-menu{
-    margin-left: 20px;
-    width: 80%;
+    min-width: 360px;
+    width: 35%;
+}
+
+aside{
+    display: none;
 }
 
 footer{
@@ -247,7 +258,7 @@ footer{
 
 .footer-itens p, .footer-itens a{
     color: var(--cor1);
-    font-size: 14px;
+    font-size: 16px;
     font-family: var(--fonteP);
     font-weight: 300;
     line-height: 22px;
@@ -257,13 +268,13 @@ footer{
 .footer-end{
     width: 100%;
     background-color: var(--cor8);
-    padding: 4px;
+    padding: 6px;
 }
 
 .footer-end p, .footer-end a{
     font-family: var(--fonteP);
     color: var(--cor1);
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
     text-decoration: none;
 }
@@ -273,4 +284,180 @@ footer{
     gap: 20px;
     font-size: 24px;
     color: var(--cor1);
+}
+
+@media (max-width: 900px){
+
+    .h1-mobile{
+        text-align: center;
+        font-family: var(--fonteP);
+        font-weight: 900;
+        width: 90%;
+        font-size: 28px;
+    }
+
+    .p-mobile{
+        width: 80%;
+        text-align: justify;
+        font-family: var(--fonteP);
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .logo-header{
+        width: 60px;
+    }
+
+    li {
+        margin-right: 32px;
+    } 
+    
+    li a {
+        font-size: 14px;
+    }
+
+    .btn-contato img{
+        width: 40px;
+    }
+
+    .banner-container{
+        width: 100svw;
+        height: 100svh;
+    }
+
+    .titulo-imagem{
+        display: none;
+    }
+
+    .principal-mobile{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 0px;
+        gap: 32px;
+    }
+
+    .principal-mobile a{
+        text-decoration: none;
+    } 
+
+    .btn_menu{
+        width: 200px;
+        justify-content: center;
+        gap: 8px;
+        padding: 10% 25%;
+        padding-top: 20px;
+        border-radius: 10px;
+        font-size: 24px;
+        margin: 0%;
+    }
+
+    .btn_menu:hover{
+        transform: none;
+    }
+
+    .info-container{
+        display: none;
+    }
+
+    .menu-container{
+        margin-top: 0;
+    }
+
+    .menu-container img{
+        padding: 40px;
+        width: 90%;
+    }
+
+    .conteudo-menu{
+        display: none;
+    }
+
+    aside{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin: 40px 0px;
+    }
+
+    #logo_footer, #termos_footer{
+        display: none;
+    }
+
+    .footer-itens h2{
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .footer-itens p, .footer-itens a{
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .footer-end p, .footer-end a{
+        font-size: 12px;
+    }
+
+    .icons{
+        gap: 32px;
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 450px){
+    .h1-mobile{
+        font-size: 26px;
+    }
+
+    .p-mobile{
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .logo-header{
+        width: 40px;
+    }
+
+    .btn-contato img{
+        width: 32px;
+    }
+
+    li {
+        margin-right: 20px;
+    } 
+    
+    li a {
+        font-size: 10px;
+    }
+
+    .btn_menu{
+        padding: 8% 20%;
+        font-size: 22px;
+    }
+
+    .menu-container img{
+        padding: 30px;
+        width: 75%;
+    }
+
+    .footer-itens h2{
+        font-size: 16px;
+    }
+
+    .footer-itens p, .footer-itens a{
+        font-size: 10px;
+    }
+
+    .footer-end p, .footer-end a{
+        white-space: nowrap;
+        font-size: 10px;
+    }
+
+    .icons{
+        gap: 20px;
+        font-size: 22px;
+    }
 }
